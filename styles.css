@@ -1,13 +1,12 @@
-* Fondo pastel */
+/* General */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #3291d1, #3ad6af);
-    color: #f80505;
+    background-color: #fefefe;
+    color: #333;
 }
 
-/* Encabezado */
 header {
     background: linear-gradient(135deg, #6a82fb, #fc5c7d);
     color: #fff;
@@ -18,7 +17,7 @@ header {
 header h1 {
     font-size: 2.5em;
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Usamos Poppins para el título */
 }
 
 .menu {
@@ -42,44 +41,58 @@ header h1 {
     color: #333;
 }
 
-/* Títulos en cajas */
-h2 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 1.8em;
-    color: #000000;
-    padding: 10px;
-    margin-bottom: 20px;
-    background: linear-gradient(135deg, #b897e2, #eb81dd);
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-h3 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-
-/* Secciones */
 .section {
     padding: 20px;
     margin: 20px auto;
     max-width: 800px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
 }
 
-/* Imagen de perfil */
+/* Sección Acerca de Mí */
+.about-section {
+    background: linear-gradient(135deg, #ff9a8b, #ff6a88);
+}
+
+.education-section {
+    background: linear-gradient(135deg, #8e9eab, #eef2f3);
+}
+
+.experience-section {
+    background: linear-gradient(135deg, #ffe2e2, #ff9a8b);
+}
+
+.skills-section {
+    background: linear-gradient(135deg, #b3d9ff, #b3f2ff);
+}
+
+.contact-section {
+    background: linear-gradient(135deg, #f7c7c5, #f7d4c9);
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: 'Poppins', sans-serif; /* Fuente Poppins para los títulos */
+    font-weight: 600;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
 .profile-img {
     display: block;
     margin: 20px auto;
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 4px solid hsl(266, 53%, 62%);
+    border: 4px solid #f7b2b7;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
 }
@@ -88,52 +101,6 @@ h3 {
     transform: scale(1.1);
 }
 
-/* Social Links */
-.social-links {
-    display: flex;
-    justify-content: center;
-    margin: 10px 0;
-    gap: 15px;
-}
-
-.social-icon img {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s ease;
-}
-
-.social-icon img:hover {
-    transform: scale(1.2);
-}
-
-/* Galería de videos */
-.video-section {
-    background: linear-gradient(135deg, #94e2fa, #8b97ff);
-    text-align: center;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 10px;
-}
-
-.video-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.video-gallery iframe {
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.video-gallery iframe:hover {
-    transform: scale(1.05);
-}
-
-/* Habilidades */
 .skills-grid {
     display: flex;
     gap: 20px;
@@ -144,39 +111,14 @@ h3 {
 .skills-grid div {
     flex: 1 1 30%;
     padding: 10px;
-    background-color: #e0d7eb;
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.skills-grid div h3 {
-    text-align: center;
-}
-
-/* Footer */
 footer {
     text-align: center;
     padding: 10px;
     background: linear-gradient(135deg, #6a82fb, #fc5c7d);
     color: #fff;
 }
-
-/* Responsividad */
-@media (max-width: 768px) {
-    .menu {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .video-gallery iframe {
-        width: 100%;
-        height: 200px;
-    }
-
-    .skills-grid {
-        flex-direction: column;
-    }
-
-    .skills-grid div {
-        margin-bottom: 20px;
-    }
