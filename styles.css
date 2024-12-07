@@ -1,0 +1,124 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fefefe;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Usamos Poppins para el título */
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #333;
+}
+
+.section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección Acerca de Mí */
+.about-section {
+    background: linear-gradient(135deg, #ff9a8b, #ff6a88);
+}
+
+.education-section {
+    background: linear-gradient(135deg, #8e9eab, #eef2f3);
+}
+
+.experience-section {
+    background: linear-gradient(135deg, #ffe2e2, #ff9a8b);
+}
+
+.skills-section {
+    background: linear-gradient(135deg, #b3d9ff, #b3f2ff);
+}
+
+.contact-section {
+    background: linear-gradient(135deg, #f7c7c5, #f7d4c9);
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: 'Poppins', sans-serif; /* Fuente Poppins para los títulos */
+    font-weight: 600;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.profile-img {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #f7b2b7;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+.skills-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills-grid div {
+    flex: 1 1 30%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+    color: #fff;
+}
