@@ -3,187 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elizabeth Quilli Tiznado - Portafolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #e6f2ff;
-        }
-        .section-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1rem;
-            color: #2c5282;
-        }
-        .section-header i {
-            margin-right: 0.75rem;
-            font-size: 1.5rem;
-        }
-        .card {
-            background-color: white;
-            border-radius: 0.75rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-        }
-    </style>
+    <title>Elizabeth Quilli Tiznado - CV Profesional</title>
+    <!-- Cargar fuente Poppins desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-blue-100 text-gray-800">
-    <div class="container mx-auto px-4 py-8 max-w-3xl">
-        <header class="text-center mb-12">
-            <h1 class="text-4xl font-bold text-blue-800 mb-2">
-                <i class="fas fa-user-graduate mr-3"></i>Elizabeth Quilli Tiznado
-            </h1>
-            <p class="text-xl text-blue-700">Bachiller en Ciencias de la Educación</p>
-        </header>
+<body>
+    <header class="header">
+        <h1>Elizabeth Quilli Tiznado</h1>
+        <p>Bachiller en Ciencias de la Educación | Matemática y Tecnología</p>
+        <nav>
+            <ul class="menu">
+                <li><a href="#about">Acerca de Mí</a></li>
+                <li><a href="#education">Formación Académica</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <section id="presentacion" class="mb-8">
-            <div class="section-header">
-                <i class="fas fa-user-circle"></i>
-                <h2 class="text-2xl font-semibold">Perfil Profesional</h2>
-            </div>
-            <div class="card p-5">
-                <p class="text-gray-700 leading-relaxed">
-                    <i class="fas fa-quote-left text-blue-500 mr-2"></i>
-                    Profesional apasionada por la educación, con un enfoque especial en matemáticas y tecnología. Busco constantemente oportunidades para aprender y crecer, utilizando mis habilidades organizacionales para contribuir a la mejora continua en el campo educativo.
-                    <i class="fas fa-quote-right text-blue-500 ml-2"></i>
-                </p>
-            </div>
+    <main>
+        <section id="about" class="section about-section">
+            <h2>📘 Acerca de Mí</h2>
+            <img src="perfil.png" alt="Elizabeth Quilli Tiznado" class="profile-img">
+            <p>
+                Soy una profesional apasionada por la enseñanza, con enfoque en la integración de tecnología y matemáticas 
+                para mejorar la educación. Estoy comprometida con el aprendizaje continuo y el uso de metodologías innovadoras 
+                para impactar positivamente en la vida de los estudiantes.
+            </p>
         </section>
 
-        <section id="educacion" class="mb-8">
-            <div class="section-header">
-                <i class="fas fa-graduation-cap"></i>
-                <h2 class="text-2xl font-semibold">Educación</h2>
-            </div>
-            <div class="card p-5">
-                <h3 class="text-xl font-bold text-blue-700">
-                    <i class="fas fa-university mr-2"></i>Universidad Nacional del Altiplano
-                </h3>
-                <p class="text-gray-700">Bachiller en Ciencias de la Educación</p>
-                <p class="text-gray-500">
-                    <i class="fas fa-calendar-alt mr-2"></i>
-                    Matemática, Física, Computación e Informática | 2019 - 2024
-                </p>
-            </div>
+        <section id="education" class="section education-section">
+            <h2>🎓 Formación Académica</h2>
+            <ul>
+                <li><strong>Universidad Nacional del Altiplano</strong> (2019-2024)</li>
+                <li>Especialización en Matemática, Física, Computación e Informática</li>
+            </ul>
         </section>
 
-        <section id="experiencia" class="mb-8">
-            <div class="section-header">
-                <i class="fas fa-briefcase"></i>
-                <h2 class="text-2xl font-semibold">Experiencia</h2>
-            </div>
-            <div class="card p-5">
-                <h3 class="text-xl font-bold text-blue-700">
-                    <i class="fas fa-chalkboard-teacher mr-2"></i>Math Fredt
-                </h3>
-                <p class="text-gray-700">Reforzamiento Académico</p>
-                <p class="text-gray-500">
-                    <i class="fas fa-calendar-alt mr-2"></i>
-                    Enero 2023 - Febrero 2023
-                </p>
-            </div>
+        <section id="experience" class="section experience-section">
+            <h2>💼 Experiencia Profesional</h2>
+            <ul>
+                <li><strong>2023:</strong> Reforzamiento en Matemática en Math Fredt.</li>
+                <li><strong>2024:</strong> Implementación de Quizizz en sesiones de aprendizaje en Matemática.</li>
+            </ul>
         </section>
 
-        <section id="habilidades" class="mb-8">
-            <div class="section-header">
-                <i class="fas fa-cogs"></i>
-                <h2 class="text-2xl font-semibold">Habilidades</h2>
-            </div>
-            <div class="grid md:grid-cols-2 gap-4">
-                <div class="card p-5">
-                    <h3 class="text-lg font-bold text-blue-700 mb-2">
-                        <i class="fas fa-laptop-code mr-2"></i>Técnicas
-                    </h3>
-                    <ul class="text-gray-700 space-y-1">
-                        <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>Microsoft Office</li>
-                        <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>Microsoft Windows</li>
-                        <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>Microsoft Visio</li>
+        <section id="skills" class="section skills-section">
+            <h2>🔧 Habilidades</h2>
+            <div class="skills-grid">
+                <div>
+                    <h3>💻 Técnicas</h3>
+                    <ul>
+                        <li>Manejo avanzado de Microsoft Office (Word, Excel, PowerPoint).</li>
+                        <li>Conocimiento básico de SPSS y GeoGebra.</li>
                     </ul>
                 </div>
-                <div class="card p-5">
-                    <h3 class="text-lg font-bold text-blue-700 mb-2">
-                        <i class="fas fa-brain mr-2"></i>Blandas
-                    </h3>
-                    <ul class="text-gray-700 space-y-1">
-                        <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>Liderazgo</li>
-                        <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>Adaptación al cambio</li>
-                        <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>Trabajo en equipo</li>
+                <div>
+                    <h3>🌐 Idiomas</h3>
+                    <ul>
+                        <li>Inglés (básico)</li>
+                        <li>Quechua (básico)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>🎯 Blandas</h3>
+                    <ul>
+                        <li>Liderazgo</li>
+                        <li>Trabajo en equipo</li>
+                        <li>Adaptación al cambio</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section id="certificaciones" class="mb-8">
-            <div class="section-header">
-                <i class="fas fa-certificate"></i>
-                <h2 class="text-2xl font-semibold">Certificaciones</h2>
-            </div>
-            <div class="card p-5">
-                <h3 class="text-lg font-bold text-blue-700 mb-3">
-                    <i class="fas fa-award mr-2"></i>Certificados Destacados
-                </h3>
-                <ul class="text-gray-700 space-y-2">
-                    <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>Curso de Herramientas Digitales (2020)</li>
-                    <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>Estrategias de Evaluación de Competencias (2021)</li>
-                    <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>Curso de GeoGebra (2023)</li>
-                    <li><i class="fas fa-check-circle text-blue-500 mr-2"></i>Especialización en Estadística con SPSS (2024)</li>
-                </ul>
-            </div>
+        <section id="contact" class="section contact-section">
+            <h2>📬 Contacto</h2>
+            <p><strong>Email:</strong> <a href="mailto:quillitiznadoelizabeth@gmail.com">quillitiznadoelizabeth@gmail.com</a></p>
+            <p><strong>Ubicación:</strong> Puno, Perú</p>
         </section>
+    </main>
 
-        <section id="practicas" class="mb-8">
-            <div class="section-header">
-                <i class="fas fa-clipboard-list"></i>
-                <h2 class="text-2xl font-semibold">Prácticas Preprofesionales</h2>
-            </div>
-            <div class="card p-5">
-                <h3 class="text-lg font-bold text-blue-700 mb-3">
-                    <i class="fas fa-university mr-2"></i>Instituciones
-                </h3>
-                <ul class="text-gray-700 space-y-2">
-                    <li>
-                        <i class="fas fa-school text-blue-500 mr-2"></i>
-                        Institución Educativa San Juan Bosco
-                    </li>
-                    <li>
-                        <i class="fas fa-school text-blue-500 mr-2"></i>
-                        Colegio Nacional San Carlos
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="contacto" class="mb-8">
-            <div class="section-header">
-                <i class="fas fa-address-book"></i>
-                <h2 class="text-2xl font-semibold">Contacto</h2>
-            </div>
-            <div class="card p-5">
-                <div class="grid md:grid-cols-2 gap-4">
-                    <div class="text-center">
-                        <a href="https://www.facebook.com/elizabeth.16.e" target="_blank" class="text-blue-700 hover:text-blue-900 inline-flex items-center">
-                            <i class="fab fa-facebook-square text-2xl mr-2"></i>Facebook
-                        </a>
-                    </div>
-                    <div class="text-center">
-                        <a href="#" class="text-blue-700 hover:text-blue-900 inline-flex items-center">
-                            <i class="fas fa-envelope text-2xl mr-2"></i>Correo Electrónico
-                        </a>
-                    </div>
-                    <div class="text-center">
-                        <a href="#" class="text-blue-700 hover:text-blue-900 inline-flex items-center">
-                            <i class="fab fa-linkedin text-2xl mr-2"></i>LinkedIn
-                        </a>
-                    </div>
-                    <div class="text-center">
-                        <a href="#" class="text-blue-700 hover:text-blue-900 inline-flex items-center">
-                            <i class="fas fa-phone-alt text-2xl mr-2"></i>Teléfono
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Elizabeth Quilli Tiznado. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
